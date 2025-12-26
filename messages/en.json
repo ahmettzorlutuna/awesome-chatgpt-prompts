@@ -44,7 +44,8 @@
     "profile": "Profile",
     "login": "Login",
     "register": "Register",
-    "logout": "Logout"
+    "logout": "Logout",
+    "ide": "Typed Prompts"
   },
   "brand": {
     "copyLogoSvg": "Copy Logo SVG",
@@ -185,7 +186,7 @@
       "text": "✨ Magic happens here... your AI will write something brilliant!",
       "imageUpload": "Upload an example image output",
       "videoUpload": "Upload an example video/GIF output",
-      "audio": "Audio output preview"
+      "audioUpload": "Upload an example audio output"
     },
     "structuredFormat": "Format",
     "structuredFormatDescription": "Select the format for your structured prompt",
@@ -250,15 +251,19 @@
     "mediaUrlDescription": "Enter a URL to the media file for this prompt",
     "mediaImage": "Example Media Image",
     "mediaVideo": "Example Media Video",
+    "mediaAudio": "Example Media Audio",
     "clickToUpload": "Click to upload an image",
     "clickToUploadVideo": "Click to upload a video",
+    "clickToUploadAudio": "Click to upload an audio file",
     "uploading": "Uploading...",
     "maxFileSize": "Max file size: 4MB (JPEG, PNG, GIF, WebP)",
     "maxVideoSize": "Max file size: 4MB (MP4)",
+    "maxAudioSize": "Max file size: 4MB (MP3, WAV, OGG)",
     "fileTooLarge": "File too large. Maximum size is 4MB.",
     "videoTooLarge": "Video too large. Maximum size is 4MB.",
     "invalidFileType": "Invalid file type. Only JPEG, PNG, GIF, and WebP are allowed.",
     "invalidVideoType": "Invalid video type. Only MP4 videos are allowed.",
+    "invalidAudioType": "Invalid audio type. Only MP3, WAV, and OGG files are allowed.",
     "uploadMedia": "Upload Media",
     "generateMedia": "Generate",
     "chooseGenerator": "Choose Generator",
@@ -281,8 +286,10 @@
     "generateWith": "Generate with AI",
     "generateImage": "Generate Image",
     "generateVideo": "Generate Video",
+    "generateAudio": "Generate Audio",
     "generateImageDescription": "Generate a unique image for your prompt using AI — perfect for showcasing your prompt to the community.",
     "generateVideoDescription": "Generate a unique video for your prompt using AI — perfect for showcasing your prompt to the community.",
+    "generateAudioDescription": "Generate unique audio/music for your prompt using AI — perfect for showcasing your prompt to the community.",
     "close": "Close",
     "mediaGeneration": {
       "connecting": "Connecting to server...",
@@ -983,7 +990,50 @@
     "docs": "Docs",
     "api": "API",
     "privacy": "Privacy",
-    "terms": "Terms"
+    "terms": "Terms",
+    "support": "Support"
+  },
+  "support": {
+    "title": "Support",
+    "description": "Find answers to common questions or get help from our community.",
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "whatIsPrompt": {
+        "question": "What is a prompt?",
+        "answer": "A prompt is an instruction or input you give to an AI model (like ChatGPT, Claude, Gemini, etc.) to guide its response. It's essentially how you communicate what you want the AI to do. Well-crafted prompts lead to better, more useful outputs from AI systems."
+      },
+      "whyPromptsMatter": {
+        "question": "Why do prompts matter? Can't I just ask the AI anything?",
+        "answer": "While advanced AI models can handle casual questions well, prompts become critical when:\n\n• Using AI via API in applications — you often get only one chance to get it right (\"one-shot prompting\"), with no back-and-forth dialogue\n• Working with smaller, cost-effective models that need more precise instructions\n• Building production systems where consistency and reliability matter\n\nOptimized prompts help you get better results, save tokens (and money), and create more reliable AI-powered applications."
+      },
+      "whatIsPromptschat": {
+        "question": "What is prompts.chat?",
+        "answer": "prompts.chat is a community-driven platform where people share, discover, and collect AI prompts. For over 4 years, users have been sharing their prompt optimization techniques here. The community helps each other improve their prompts and learn new approaches to working with AI systems."
+      },
+      "howToUse": {
+        "question": "How do I use prompts from this platform?",
+        "answer": "Simply browse the prompts, find one you like, and copy it. You can then paste it into your preferred AI tool (ChatGPT, Claude, Gemini, etc.) or use it in your applications via API. Many prompts include variables you can customize before copying."
+      },
+      "license": {
+        "question": "Can I use these prompts commercially?",
+        "answer": "Yes! All prompts on prompts.chat are released under the CC0 (Creative Commons Zero) license, which means they are in the public domain. You can use, modify, and distribute them freely for any purpose, including commercial use, without attribution."
+      },
+      "selfHost": {
+        "question": "Can I self-host this platform?",
+        "answer": "Absolutely! prompts.chat is fully open source. You can deploy your own private instance for your team or organization. Check out our self-hosting documentation for setup instructions."
+      }
+    },
+    "contact": {
+      "title": "Need More Help?",
+      "description": "If you couldn't find an answer to your question, fill out the form below and we'll help you on GitHub.",
+      "form": {
+        "title": "Issue Title",
+        "titlePlaceholder": "Brief summary of your issue or question",
+        "description": "Description",
+        "descriptionPlaceholder": "Please describe your issue or question in detail..."
+      },
+      "openIssue": "Open GitHub Issue"
+    }
   },
   "apiKey": {
     "title": "MCP API Key",
@@ -1112,5 +1162,18 @@
       "contentConstraints": "Content constraints:",
       "contentExample": "\"Do not include personal opinions\" / \"Focus only on factual information\""
     }
+  },
+  "ide": {
+    "title": "Typed Prompts",
+    "subtitle": "Type-safe, structured prompt building",
+    "editor": "Editor",
+    "preview": "Preview",
+    "run": "Run",
+    "reset": "Reset",
+    "copied": "Copied to clipboard",
+    "runToPreview": "Click Run to see the prompt preview",
+    "desktopOnly": "Desktop Only",
+    "desktopOnlyDescription": "The Typed Prompts editor requires a larger screen to work properly. Please open this page on a desktop or laptop computer.",
+    "browsePrompts": "Browse Prompts"
   }
 }

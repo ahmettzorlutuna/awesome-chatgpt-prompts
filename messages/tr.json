@@ -44,7 +44,8 @@
     "profile": "Profil",
     "login": "Giriş Yap",
     "register": "Kayıt Ol",
-    "logout": "Çıkış Yap"
+    "logout": "Çıkış Yap",
+    "ide": "Tipli Promptlar"
   },
   "brand": {
     "copyLogoSvg": "Logo SVG'sini Kopyala",
@@ -185,7 +186,7 @@
       "text": "AI bu prompt'u kullanarak metin yanıtı üretecek",
       "imageUpload": "Örnek görsel çıktısı yükle",
       "videoUpload": "Örnek video/GIF çıktısı yükle",
-      "audio": "Ses çıktısı önizlemesi"
+      "audioUpload": "Örnek ses çıktısı yükle"
     },
     "structuredFormat": "Format",
     "structuredFormatDescription": "Yapılandırılmış promptunuz için format seçin",
@@ -250,15 +251,19 @@
     "mediaUrlDescription": "Bu prompt için medya dosyasının URL'sini girin",
     "mediaImage": "Medya Görseli",
     "mediaVideo": "Medya Videosu",
+    "mediaAudio": "Medya Sesi",
     "clickToUpload": "Görsel yüklemek için tıklayın",
     "clickToUploadVideo": "Video yüklemek için tıklayın",
+    "clickToUploadAudio": "Ses dosyası yüklemek için tıklayın",
     "uploading": "Yükleniyor...",
     "maxFileSize": "Maksimum dosya boyutu: 4MB (JPEG, PNG, GIF, WebP)",
     "maxVideoSize": "Maksimum dosya boyutu: 4MB (MP4)",
+    "maxAudioSize": "Maksimum dosya boyutu: 4MB (MP3, WAV, OGG)",
     "fileTooLarge": "Dosya çok büyük. Maksimum boyut 4MB'dir.",
     "videoTooLarge": "Video çok büyük. Maksimum boyut 4MB'dir.",
     "invalidFileType": "Geçersiz dosya türü. Yalnızca JPEG, PNG, GIF ve WebP'ye izin verilir.",
-    "invalidVideoType": "Geçersiz video türü. Yalnızca MP4 videolara izin verilir.",
+    "invalidVideoType": "Geçersiz video tipi. Sadece MP4 videoları kabul edilir.",
+    "invalidAudioType": "Geçersiz ses tipi. Sadece MP3, WAV ve OGG dosyaları kabul edilir.",
     "uploadMedia": "Medya Yükle",
     "generateMedia": "Oluştur",
     "chooseGenerator": "Oluşturucu Seç",
@@ -281,8 +286,10 @@
     "generateWith": "AI ile oluştur",
     "generateImage": "Görsel Oluştur",
     "generateVideo": "Video Oluştur",
+    "generateAudio": "Ses Oluştur",
     "generateImageDescription": "Promptunuz için AI kullanarak benzersiz bir görsel oluşturun — topluluğa promptunuzu sergilemek için mükemmel.",
     "generateVideoDescription": "Promptunuz için AI kullanarak benzersiz bir video oluşturun — topluluğa promptunuzu sergilemek için mükemmel.",
+    "generateAudioDescription": "Promptunuz için AI kullanarak benzersiz ses/müzik oluşturun — topluluğa promptunuzu sergilemek için mükemmel.",
     "close": "Kapat",
     "mediaGeneration": {
       "connecting": "Sunucuya bağlanılıyor...",
@@ -983,7 +990,50 @@
     "docs": "Dökümanlar",
     "api": "API",
     "privacy": "Gizlilik",
-    "terms": "Şartlar"
+    "terms": "Şartlar",
+    "support": "Destek"
+  },
+  "support": {
+    "title": "Destek",
+    "description": "Sık sorulan sorulara cevap bulun veya topluluğumuzdan yardım alın.",
+    "faq": {
+      "title": "Sık Sorulan Sorular",
+      "whatIsPrompt": {
+        "question": "Prompt nedir?",
+        "answer": "Prompt, bir yapay zeka modeline (ChatGPT, Claude, Gemini vb.) verdiğiniz talimat veya girdidir. Yapay zekanın ne yapmasını istediğinizi iletmenin yoludur. İyi hazırlanmış promptlar, yapay zeka sistemlerinden daha iyi ve daha kullanışlı çıktılar almanızı sağlar."
+      },
+      "whyPromptsMatter": {
+        "question": "Promptlar neden önemli? Yapay zekaya istediğimi soramaz mıyım?",
+        "answer": "Gelişmiş yapay zeka modelleri günlük soruları iyi karşılayabilirken, promptlar şu durumlarda kritik hale gelir:\n\n• Uygulamalarda API üzerinden yapay zeka kullanırken — genellikle tek şansınız vardır (\"one-shot prompting\"), karşılıklı diyalog yoktur\n• Daha hassas talimatlar gerektiren küçük, ekonomik modellerle çalışırken\n• Tutarlılık ve güvenilirliğin önemli olduğu üretim sistemleri oluştururken\n\nOptimize edilmiş promptlar daha iyi sonuçlar almanıza, token (ve para) tasarrufu yapmanıza ve daha güvenilir yapay zeka destekli uygulamalar oluşturmanıza yardımcı olur."
+      },
+      "whatIsPromptschat": {
+        "question": "prompts.chat nedir?",
+        "answer": "prompts.chat, insanların yapay zeka promptlarını paylaştığı, keşfettiği ve topladığı topluluk odaklı bir platformdur. 4 yılı aşkın süredir kullanıcılar prompt optimizasyon tekniklerini burada paylaşmaktadır. Topluluk, promptlarını geliştirmek ve yapay zeka sistemleriyle çalışmanın yeni yaklaşımlarını öğrenmek için birbirine yardımcı olur."
+      },
+      "howToUse": {
+        "question": "Bu platformdaki promptları nasıl kullanırım?",
+        "answer": "Promptlara göz atın, beğendiğinizi bulun ve kopyalayın. Ardından tercih ettiğiniz yapay zeka aracına (ChatGPT, Claude, Gemini vb.) yapıştırabilir veya API aracılığıyla uygulamalarınızda kullanabilirsiniz. Birçok prompt, kopyalamadan önce özelleştirebileceğiniz değişkenler içerir."
+      },
+      "license": {
+        "question": "Bu promptları ticari olarak kullanabilir miyim?",
+        "answer": "Evet! prompts.chat'teki tüm promptlar CC0 (Creative Commons Zero) lisansı altında yayınlanmıştır, yani kamu malıdır. Ticari kullanım dahil herhangi bir amaç için atıf yapmadan özgürce kullanabilir, değiştirebilir ve dağıtabilirsiniz."
+      },
+      "selfHost": {
+        "question": "Bu platformu kendi sunucumda barındırabilir miyim?",
+        "answer": "Kesinlikle! prompts.chat tamamen açık kaynaklıdır. Ekibiniz veya kuruluşunuz için kendi özel örneğinizi dağıtabilirsiniz. Kurulum talimatları için self-hosting dokümantasyonumuza göz atın."
+      }
+    },
+    "contact": {
+      "title": "Daha Fazla Yardıma mı İhtiyacınız Var?",
+      "description": "Sorunuza cevap bulamadıysanız, aşağıdaki formu doldurun, GitHub üzerinden size yardımcı olalım.",
+      "form": {
+        "title": "Issue Başlığı",
+        "titlePlaceholder": "Sorunuzun veya probleminizin kısa özeti",
+        "description": "Açıklama",
+        "descriptionPlaceholder": "Lütfen sorunuzu veya probleminizi detaylı olarak açıklayın..."
+      },
+      "openIssue": "GitHub Issue Aç"
+    }
   },
   "apiKey": {
     "title": "MCP API Anahtarı",
@@ -1112,5 +1162,18 @@
       "contentConstraints": "İçerik kısıtlamaları:",
       "contentExample": "\"Kişisel görüşler ekleme\" / \"Sadece olgusal bilgilere odaklan\""
     }
+  },
+  "ide": {
+    "title": "Tipli Promptlar",
+    "subtitle": "Tip güvenli, yapılandırılmış prompt oluşturma",
+    "editor": "Editör",
+    "preview": "Önizleme",
+    "run": "Çalıştır",
+    "reset": "Sıfırla",
+    "copied": "Panoya kopyalandı",
+    "runToPreview": "Prompt önizlemesini görmek için Çalıştır'a tıklayın",
+    "desktopOnly": "Yalnızca Masaüstü",
+    "desktopOnlyDescription": "Tipli Promptlar editörü düzgün çalışması için daha büyük bir ekran gerektirir. Lütfen bu sayfayı bir masaüstü veya dizüstü bilgisayarda açın.",
+    "browsePrompts": "Promptlara Göz At"
   }
 }

@@ -44,7 +44,8 @@
     "profile": "Profilo",
     "login": "Accedi",
     "register": "Registrati",
-    "logout": "Esci"
+    "logout": "Esci",
+    "ide": "Prompt Tipizzati"
   },
   "brand": {
     "copyLogoSvg": "Copia Logo SVG",
@@ -185,7 +186,7 @@
       "text": "✨ La magia accade qui... la tua IA scriverà qualcosa di brillante!",
       "imageUpload": "Carica un'immagine di esempio",
       "videoUpload": "Carica un video/GIF di esempio",
-      "audio": "Anteprima audio"
+      "audioUpload": "Carica esempio audio"
     },
     "structuredFormat": "Formato",
     "structuredFormatDescription": "Seleziona il formato per il tuo prompt strutturato",
@@ -250,15 +251,19 @@
     "mediaUrlDescription": "Inserisci un URL al file multimediale per questo prompt",
     "mediaImage": "Immagine Media",
     "mediaVideo": "Video Media",
+    "mediaAudio": "Audio Media",
     "clickToUpload": "Clicca per caricare un'immagine",
     "clickToUploadVideo": "Clicca per caricare un video",
+    "clickToUploadAudio": "Clicca per caricare un file audio",
     "uploading": "Caricamento...",
     "maxFileSize": "Dimensione max: 4MB (JPEG, PNG, GIF, WebP)",
     "maxVideoSize": "Dimensione max: 4MB (MP4)",
+    "maxAudioSize": "Dim. max: 4MB (MP3, WAV, OGG)",
     "fileTooLarge": "File troppo grande. La dimensione massima è 4MB.",
     "videoTooLarge": "Video troppo grande. La dimensione massima è 4MB.",
     "invalidFileType": "Tipo di file non valido. Sono consentiti solo JPEG, PNG, GIF e WebP.",
     "invalidVideoType": "Tipo di video non valido. Sono consentiti solo video MP4.",
+    "invalidAudioType": "Tipo audio non valido. Sono consentiti solo file MP3, WAV e OGG.",
     "uploadMedia": "Carica Media",
     "generateMedia": "Genera",
     "chooseGenerator": "Scegli Generatore",
@@ -281,8 +286,10 @@
     "generateWith": "Genera con AI",
     "generateImage": "Genera Immagine",
     "generateVideo": "Genera Video",
+    "generateAudio": "Genera Audio",
     "generateImageDescription": "Genera un'immagine unica per il tuo prompt usando l'IA — perfetto per mostrare il tuo prompt alla community.",
     "generateVideoDescription": "Genera un video unico per il tuo prompt usando l'IA — perfetto per mostrare il tuo prompt alla community.",
+    "generateAudioDescription": "Genera audio/musica unici per il tuo prompt usando l'IA — perfetto per mostrare il tuo prompt alla community.",
     "close": "Chiudi",
     "mediaGeneration": {
       "connecting": "Connessione al server...",
@@ -983,7 +990,50 @@
     "docs": "Documentazione",
     "api": "API",
     "privacy": "Privacy",
-    "terms": "Termini"
+    "terms": "Termini",
+    "support": "Supporto"
+  },
+  "support": {
+    "title": "Supporto",
+    "description": "Trova risposte alle domande frequenti o ottieni aiuto dalla nostra community.",
+    "faq": {
+      "title": "Domande Frequenti",
+      "whatIsPrompt": {
+        "question": "Cos'è un prompt?",
+        "answer": "Un prompt è un'istruzione o input che dai a un modello di IA (come ChatGPT, Claude, Gemini, ecc.) per guidare la sua risposta. È essenzialmente come comunichi cosa vuoi che l'IA faccia. Prompt ben elaborati portano a output migliori e più utili dai sistemi di IA."
+      },
+      "whyPromptsMatter": {
+        "question": "Perché i prompt sono importanti? Non posso semplicemente chiedere qualsiasi cosa all'IA?",
+        "answer": "Mentre i modelli di IA avanzati possono gestire bene le domande casuali, i prompt diventano critici quando:\n\n• Usi l'IA via API nelle applicazioni — spesso hai solo una possibilità (\"one-shot prompting\"), senza dialogo bidirezionale\n• Lavori con modelli più piccoli ed economici che necessitano di istruzioni più precise\n• Costruisci sistemi di produzione dove coerenza e affidabilità contano\n\nI prompt ottimizzati ti aiutano a ottenere risultati migliori, risparmiare token (e denaro), e creare applicazioni IA più affidabili."
+      },
+      "whatIsPromptschat": {
+        "question": "Cos'è prompts.chat?",
+        "answer": "prompts.chat è una piattaforma guidata dalla community dove le persone condividono, scoprono e raccolgono prompt IA. Da oltre 4 anni, gli utenti condividono qui le loro tecniche di ottimizzazione dei prompt. La community si aiuta a vicenda per migliorare i propri prompt e imparare nuovi approcci per lavorare con i sistemi di IA."
+      },
+      "howToUse": {
+        "question": "Come uso i prompt da questa piattaforma?",
+        "answer": "Semplicemente sfoglia i prompt, trovane uno che ti piace e copialo. Puoi poi incollarlo nel tuo strumento di IA preferito (ChatGPT, Claude, Gemini, ecc.) o usarlo nelle tue applicazioni via API. Molti prompt includono variabili che puoi personalizzare prima di copiare."
+      },
+      "license": {
+        "question": "Posso usare questi prompt commercialmente?",
+        "answer": "Sì! Tutti i prompt su prompts.chat sono rilasciati sotto licenza CC0 (Creative Commons Zero), il che significa che sono di dominio pubblico. Puoi usarli, modificarli e distribuirli liberamente per qualsiasi scopo, incluso l'uso commerciale, senza attribuzione."
+      },
+      "selfHost": {
+        "question": "Posso auto-ospitare questa piattaforma?",
+        "answer": "Assolutamente! prompts.chat è completamente open source. Puoi distribuire la tua istanza privata per il tuo team o organizzazione. Consulta la nostra documentazione di self-hosting per le istruzioni di configurazione."
+      }
+    },
+    "contact": {
+      "title": "Hai Bisogno di Più Aiuto?",
+      "description": "Se non hai trovato una risposta alla tua domanda, compila il modulo qui sotto e ti aiuteremo su GitHub.",
+      "form": {
+        "title": "Titolo Issue",
+        "titlePlaceholder": "Breve riepilogo del tuo problema o domanda",
+        "description": "Descrizione",
+        "descriptionPlaceholder": "Per favore descrivi il tuo problema o domanda in dettaglio..."
+      },
+      "openIssue": "Apri Issue su GitHub"
+    }
   },
   "apiKey": {
     "title": "Chiave API MCP",
@@ -1112,5 +1162,18 @@
       "contentConstraints": "Vincoli di contenuto:",
       "contentExample": "\"Non includere opinioni personali\" / \"Concentrati solo su informazioni fattuali\""
     }
+  },
+  "ide": {
+    "title": "Prompt Tipizzati",
+    "subtitle": "Costruzione di prompt strutturata e type-safe",
+    "editor": "Editor",
+    "preview": "Anteprima",
+    "run": "Esegui",
+    "reset": "Ripristina",
+    "copied": "Copiato negli appunti",
+    "runToPreview": "Clicca su Esegui per vedere l'anteprima del prompt",
+    "desktopOnly": "Solo Desktop",
+    "desktopOnlyDescription": "L'editor di Prompt Tipizzati richiede uno schermo più grande per funzionare correttamente. Si prega di aprire questa pagina su un computer desktop o laptop.",
+    "browsePrompts": "Esplora Prompt"
   }
 }

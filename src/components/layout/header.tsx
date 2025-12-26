@@ -282,6 +282,12 @@ export function Header({ authProvider = "credentials", allowRegistration = true 
           >
             {t("nav.promptmasters")}
           </Link>
+          <Link
+            href="/typed-prompts-editor"
+            className="px-3 py-1.5 rounded-md text-muted-foreground transition-colors hover:text-foreground hover:bg-accent"
+          >
+            {t("nav.ide")}
+          </Link>
         </nav>
 
         {/* Spacer */}

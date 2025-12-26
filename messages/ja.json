@@ -44,7 +44,8 @@
     "profile": "プロフィール",
     "login": "ログイン",
     "register": "登録",
-    "logout": "ログアウト"
+    "logout": "ログアウト",
+    "ide": "型付きプロンプト"
   },
   "brand": {
     "copyLogoSvg": "ロゴSVGをコピー",
@@ -185,7 +186,7 @@
       "text": "✨ ここで魔法が起こります... AIが素晴らしいものを書きます！",
       "imageUpload": "サンプル画像をアップロード",
       "videoUpload": "サンプル動画/GIFをアップロード",
-      "audio": "音声出力プレビュー"
+      "audioUpload": "サンプルオーディオをアップロード"
     },
     "insertVariable": "変数を挿入",
     "variableName": "変数名",
@@ -258,15 +259,19 @@
     "mediaUrlDescription": "このプロンプトのメディアファイルURLを入力",
     "mediaImage": "メディア画像",
     "mediaVideo": "メディア動画",
+    "mediaAudio": "メディアオーディオ",
     "clickToUpload": "クリックして画像をアップロード",
     "clickToUploadVideo": "クリックして動画をアップロード",
+    "clickToUploadAudio": "クリックしてオーディオファイルをアップロード",
     "uploading": "アップロード中...",
     "maxFileSize": "最大ファイルサイズ: 4MB (JPEG, PNG, GIF, WebP)",
     "maxVideoSize": "最大ファイルサイズ: 4MB (MP4)",
+    "maxAudioSize": "最大ファイルサイズ: 4MB (MP3, WAV, OGG)",
     "fileTooLarge": "ファイルが大きすぎます。最大サイズは4MBです。",
     "videoTooLarge": "動画が大きすぎます。最大サイズは4MBです。",
     "invalidFileType": "無効なファイル形式です。JPEG、PNG、GIF、WebPのみ許可されています。",
     "invalidVideoType": "無効な動画形式です。MP4動画のみ許可されています。",
+    "invalidAudioType": "無効なオーディオタイプです。MP3、WAV、OGGファイルのみ許可されています。",
     "uploadMedia": "メディアをアップロード",
     "generateMedia": "生成",
     "chooseGenerator": "生成ツールを選択",
@@ -289,8 +294,10 @@
     "generateWith": "AIで生成",
     "generateImage": "画像を生成",
     "generateVideo": "動画を生成",
+    "generateAudio": "オーディオを生成",
     "generateImageDescription": "AIを使ってプロンプト用のユニークな画像を生成 — コミュニティにプロンプトを紹介するのに最適。",
     "generateVideoDescription": "AIを使ってプロンプト用のユニークな動画を生成 — コミュニティにプロンプトを紹介するのに最適。",
+    "generateAudioDescription": "AIを使用してプロンプト用のユニークなオーディオ/音楽を生成 — コミュニティにプロンプトを紹介するのに最適です。",
     "close": "閉じる",
     "mediaGeneration": {
       "connecting": "サーバーに接続中...",
@@ -983,7 +990,50 @@
     "docs": "ドキュメント",
     "api": "API",
     "privacy": "プライバシー",
-    "terms": "利用規約"
+    "terms": "利用規約",
+    "support": "サポート"
+  },
+  "support": {
+    "title": "サポート",
+    "description": "よくある質問への回答を見つけるか、コミュニティからサポートを受けてください。",
+    "faq": {
+      "title": "よくある質問",
+      "whatIsPrompt": {
+        "question": "プロンプトとは何ですか？",
+        "answer": "プロンプトとは、AIモデル（ChatGPT、Claude、Geminiなど）に与える指示または入力のことです。AIに何をしてほしいかを伝える方法です。適切に作成されたプロンプトは、AIシステムからより良く、より有用な出力を得ることができます。"
+      },
+      "whyPromptsMatter": {
+        "question": "なぜプロンプトが重要なのですか？AIに何でも聞けばいいのでは？",
+        "answer": "高度なAIモデルはカジュアルな質問をうまく処理できますが、プロンプトは以下の場合に重要になります：\n\n• アプリケーションでAPIを介してAIを使用する場合 — 多くの場合、一発勝負（「ワンショットプロンプティング」）で、やり取りの対話がない\n• より正確な指示が必要な小型で経済的なモデルで作業する場合\n• 一貫性と信頼性が重要な本番システムを構築する場合\n\n最適化されたプロンプトは、より良い結果を得て、トークン（とお金）を節約し、より信頼性の高いAI搭載アプリケーションを作成するのに役立ちます。"
+      },
+      "whatIsPromptschat": {
+        "question": "prompts.chatとは何ですか？",
+        "answer": "prompts.chatは、人々がAIプロンプトを共有、発見、収集するコミュニティ主導のプラットフォームです。4年以上にわたり、ユーザーはここでプロンプト最適化のテクニックを共有してきました。コミュニティはお互いにプロンプトを改善し、AIシステムとの作業の新しいアプローチを学ぶのを助け合っています。"
+      },
+      "howToUse": {
+        "question": "このプラットフォームのプロンプトをどのように使用しますか？",
+        "answer": "プロンプトを閲覧し、気に入ったものを見つけてコピーするだけです。その後、お好みのAIツール（ChatGPT、Claude、Geminiなど）に貼り付けるか、APIを介してアプリケーションで使用できます。多くのプロンプトには、コピーする前にカスタマイズできる変数が含まれています。"
+      },
+      "license": {
+        "question": "これらのプロンプトを商用利用できますか？",
+        "answer": "はい！prompts.chat上のすべてのプロンプトはCC0（Creative Commons Zero）ライセンスの下でリリースされており、パブリックドメインに属します。帰属表示なしで、商用利用を含むあらゆる目的で自由に使用、変更、配布できます。"
+      },
+      "selfHost": {
+        "question": "このプラットフォームをセルフホストできますか？",
+        "answer": "もちろんです！prompts.chatは完全にオープンソースです。チームや組織のために独自のプライベートインスタンスをデプロイできます。セットアップ手順については、セルフホスティングのドキュメントをご確認ください。"
+      }
+    },
+    "contact": {
+      "title": "さらにサポートが必要ですか？",
+      "description": "質問への回答が見つからなかった場合は、以下のフォームに記入してください。GitHubでお手伝いします。",
+      "form": {
+        "title": "イシューのタイトル",
+        "titlePlaceholder": "問題や質問の簡単な概要",
+        "description": "説明",
+        "descriptionPlaceholder": "問題や質問を詳しく説明してください..."
+      },
+      "openIssue": "GitHubでイシューを開く"
+    }
   },
   "apiKey": {
     "title": "MCP APIキー",
@@ -1112,5 +1162,18 @@
       "contentConstraints": "内容の制約：",
       "contentExample": "「個人的な意見を含めない」/「事実情報のみに焦点を当てる」"
     }
+  },
+  "ide": {
+    "title": "型付きプロンプト",
+    "subtitle": "型安全で構造化されたプロンプト構築",
+    "editor": "エディタ",
+    "preview": "プレビュー",
+    "run": "実行",
+    "reset": "リセット",
+    "copied": "クリップボードにコピーしました",
+    "runToPreview": "実行をクリックしてプロンプトのプレビューを表示",
+    "desktopOnly": "デスクトップ専用",
+    "desktopOnlyDescription": "型付きプロンプトエディタは、正常に動作するために大きな画面が必要です。デスクトップまたはラップトップコンピュータでこのページを開いてください。",
+    "browsePrompts": "プロンプトを閲覧"
   }
 }
